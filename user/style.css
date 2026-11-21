@@ -1,0 +1,142 @@
+/* Shared public stylesheet. Page-specific legacy styles remain inline during the staged migration. */
+html { background: #f3f4f6; }
+body { min-height: 100vh; }
+
+.page-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    padding-top: 8px !important;
+}
+
+.navbar {
+    margin-bottom: 28px !important;
+    padding-bottom: 16px !important;
+}
+
+@media (max-width: 760px) {
+    .navbar { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .nav-links { flex-wrap: wrap; gap: 12px; }
+    .page-container { padding-left: 16px; padding-right: 16px; }
+}
+
+.container {
+    display: flex;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 1200px; 
+}
+.page-container {
+    background-color: white; 
+    width: 100%;
+    max-width: 1500px;
+    padding: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-section {
+    flex: 1;
+    padding-right: 40px;
+    border-right: 1px solid #ddd;
+}
+
+.main-content {
+    flex: 2;
+    padding-left: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    max-width: 500px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-error { background: #fee2e2; color: #991b1b; padding: 10px; border-radius: 5px; margin-bottom: 15px; font-size: 13px; }
+.form-success { background: #dcfce7; color: #166534; padding: 10px; border-radius: 5px; margin-bottom: 15px; font-size: 13px; }
+
+.btn-consult {
+    background-color: #e0e0e0;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.info-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.info-card h3 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-card p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
